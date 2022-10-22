@@ -42,21 +42,31 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
 
-let impares = [];
-for (let index = 0; index < numbers.length; index += 1){
-  if (numbers[index] % 2 != 0){
-    impares.push(numbers[index]);
-  }
-}
-if (impares.length == 0){
-  console.log('Nenhum valor ímpar encontrado');
-} 
-else{
-  console.log(impares);
-  console.log('Existem ' + impares.length + ' valores impares.' );
-}
+// let impares = [];
+// for (let index = 0; index < numbers.length; index += 1){
+//   if (numbers[index] % 2 != 0){
+//     impares.push(numbers[index]);
+//   }
+// }
+// if (impares.length == 0){
+//   console.log('Nenhum valor ímpar encontrado');
+// } 
+// else{
+//   console.log(impares);
+//   console.log('Existem ' + impares.length + ' valores impares.' );
+// }
 
 // Utilizando for, descubra qual o menor valor contido no array e imprima-o;
+
+let menor = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1){
+    if (numbers[index] < menor) {
+        menor = numbers [index] ;
+    }
+}
+
+console.log(menor);
 
 // Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;
 
