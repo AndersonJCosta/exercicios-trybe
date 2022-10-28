@@ -13,6 +13,7 @@ let leitor = {
 
   //O livro favorito de Julia Pessoa se chama ‘O Pior Dia de Todos’”.
 
+  
 console.log();
 console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo);
 console.log();
