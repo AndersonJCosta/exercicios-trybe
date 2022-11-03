@@ -54,7 +54,17 @@
       5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
       6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       */
-      document.getElementsByTagName("p")[1].innerText = "Trabalhando muito.";
+     function pModify(newText) {
+      const text = document.getElementsByTagName("p")[1]
+      text.innerText = newText
+     }
+      pModify ("Trabalhando muito.")
+
+
+      // document.getElementsByTagName("p")[1].innerText = "Trabalhando muito."; // 1. ok
+      
+   
+        
       
     </script>
   </body>
