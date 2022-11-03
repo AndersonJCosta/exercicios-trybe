@@ -55,16 +55,19 @@
       6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       */
      function pModify(newText) {
-      const text = document.getElementsByTagName("p")[1]
+      const text = document.getElementsByTagName("p")[1];
       text.innerText = newText
      }
       pModify ("Trabalhando muito.")
 
-
       // document.getElementsByTagName("p")[1].innerText = "Trabalhando muito."; // 1. ok
       
+      function modifySquare (color) {
+        const square= document.getElementsByClassName("main-content")[0];
+        square.style.backgroundColor = color
+      }
    
-        
+      modifySquare("rgb(76,164,109)")
       
     </script>
   </body>
