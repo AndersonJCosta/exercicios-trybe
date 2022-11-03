@@ -43,3 +43,17 @@ function imagem() {
     doc.querySelector(".left-content").appendChild(tag);
 }
 imagem();
+
+const dezNumeros = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+function lista() {
+    const createUl = doc.createElement('ul');
+    doc.querySelector(".right-content").appendChild(createUl);
+    for (let index = 0; index < dezNumeros.length; index += 1) {
+        const numeros = doc.createElement('li');
+        numeros.innerText = dezNumeros[index];
+        doc.querySelector('ul').appendChild (numeros);
+
+    }
+}
+lista();
