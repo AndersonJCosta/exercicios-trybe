@@ -87,6 +87,15 @@
 
     pToUppercase();
 
+    const pContent = () => {
+      let content = document.getElementsByTagName("p")
+      console.log(content);
+      for (let index in content){
+        console.log(content[index].innerText);
+      }
+    }
+    pContent();
+
     </script>
   </body>
 </html>
