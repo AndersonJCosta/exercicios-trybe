@@ -54,24 +54,32 @@
       5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
       6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
       */
-     function pModify(newText) {
+    function pModify(newText) {
       const text = document.getElementsByTagName("p")[1];
       text.innerText = newText
      }
     pModify ("Trabalhando muito.")
       
-      function modifySquare (color) {
+    function modifySquare (color) {
         const square = document.getElementsByClassName("main-content")[0];
         square.style.backgroundColor = color
       }
    
     modifySquare("rgb(76,164,109)")
       
-      function modifyCenterSquare(color) {
+    function modifyCenterSquare(color) {
         const square = document.getElementsByClassName("center-content")[0];
         square.style.backgroundColor = color
       }    
     modifyCenterSquare("white")
+    
+    function rectifyH1(correction) {
+      const correct = document.getElementsByTagName("h1")[0];
+      correct.innerText = correction
+    }
+    
+    rectifyH1("Exercícios - JavaScript - DOM");
+
     </script>
   </body>
 </html>
