@@ -57,3 +57,11 @@ function lista() {
     }
 }
 lista();
+
+function h3ToMain() {
+    for (let index = 0; index < 3; index += 1){
+        const h3s =  doc.createElement('h3')
+        doc.querySelector('main').appendChild (h3s)
+    }
+}
+h3ToMain()
