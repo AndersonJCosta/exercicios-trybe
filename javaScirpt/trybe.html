@@ -58,17 +58,20 @@
       const text = document.getElementsByTagName("p")[1];
       text.innerText = newText
      }
-      pModify ("Trabalhando muito.")
-
-      // document.getElementsByTagName("p")[1].innerText = "Trabalhando muito."; // 1. ok
+    pModify ("Trabalhando muito.")
       
       function modifySquare (color) {
-        const square= document.getElementsByClassName("main-content")[0];
+        const square = document.getElementsByClassName("main-content")[0];
         square.style.backgroundColor = color
       }
    
-      modifySquare("rgb(76,164,109)")
+    modifySquare("rgb(76,164,109)")
       
+      function modifyCenterSquare(color) {
+        const square = document.getElementsByClassName("center-content")[0];
+        square.style.backgroundColor = color
+      }    
+    modifyCenterSquare("white")
     </script>
   </body>
 </html>
